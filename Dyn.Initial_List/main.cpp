@@ -14,6 +14,10 @@ public:
         this->y = obj.y;
         return *this;
     }
+    ostream& operator << (ostream& o, const Point& p){
+        o << p.getX() << " " << p.getY();;
+        return o;
+    }
 };
 
 template<class T, int size>
