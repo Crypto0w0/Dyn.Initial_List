@@ -31,6 +31,7 @@ class MyClass{
             int count = 0;
             for (auto el : obj){
                 arr[count] = el;
+                count++;
             }
         }
 };
