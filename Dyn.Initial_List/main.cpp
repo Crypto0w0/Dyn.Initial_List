@@ -34,10 +34,17 @@ class MyClass{
                 count++;
             }
         }
+        void Print(){
+            for (int i = 0; i < size; i++){
+                cout << arr[i] << endl;
+            }
+        }
 };
 
 int main() {
     Point p1;
     Point p2;
     MyClass<Point, 2> cl {p1, p2};
+    MyClass<int, 2> cl2 {1, 2};
+    cl2.Print();
 }
